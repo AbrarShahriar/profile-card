@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Kumbh+Sans");
+html body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Kumbh Sans';
+}
+
+body {
+  background: #19a2ae;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 20px;
+  width: 320px;
+  height: 330px;
+  background: white;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .header {
+  width: 100%;
+  height: 100px;
+  background: url("/images/bg-pattern-card.svg");
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container .profile-pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.container .personal-info {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #2d3248;
+}
+
+.container .personal-info .name {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.container .personal-info .age {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.container .personal-info .place {
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+.container .line {
+  opacity: 0.2;
+}
+
+.container .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  margin: 0 20px;
+  margin-top: 20px;
+}
+
+.container .profile-info .info {
+  min-width: 100px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  padding: 5x;
+}
+
+.container .profile-info .info .amount {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.container .profile-info .info .amountFor {
+  font-size: 12px;
+  color: #19a2ae;
+}
+
+.bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.top {
+  top: -50%;
+  left: -50%;
+}
+
+.bottom {
+  bottom: -60%;
+  right: -30%;
+}
+
+@media (max-width: 1000px) {
+  .bg {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bg {
+    width: 400px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Kumbh+Sans');
+
+html body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans';
+}
+
+body {
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+    width: 320px;
+    height: 330px;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+
+    .header {
+        width: 100%;
+        height: 100px;
+        background: url('/images/bg-pattern-card.svg');
+
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .profile-pic {
+        object-fit: cover;
+        width: 70px;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid white;
+        border-radius: 50%;
+    }
+
+    .personal-info {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 1.8rem;
+        color: hsl(229, 23%, 23%);
+
+        .name {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .age {
+            font-weight: 400;
+            opacity: 0.7;
+        }
+
+        .place {
+            opacity: 0.7;
+            font-size: 16px;
+        }
+    }
+
+    .line {
+        opacity: 0.2;
+    }
+
+    .profile-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 0 20px;
+        margin-top: 20px;
+
+        .info {
+            min-width: 100px;
+            align-self: stretch;
+            padding: 5x;
+
+            .amount {
+                font-size: 16px;
+                font-weight: 700;
+                color: hsl(229, 23%, 23%);
+            }
+
+            .amountFor {
+                font-size: 12px;
+                color: hsl(185, 75%, 39%);
+            }
+        }
+    }
+
+}
+
+.bg {
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.top {
+    top: -50%;
+    left: -50%;
+}
+
+.bottom {
+    bottom: -60%;
+    right: -30%;
+}
+
+@media (max-width: 1000px) {
+    .bg {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bg {
+        width: 400px;
+    }
+}
